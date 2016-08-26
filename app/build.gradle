@@ -6,8 +6,8 @@ android {
 
     defaultConfig {
         applicationId "in.ac.iiitd.psingh.mc16.objectivequiz"
-        minSdkVersion 23
-        targetSdkVersion 24
+        minSdkVersion 14
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
     }

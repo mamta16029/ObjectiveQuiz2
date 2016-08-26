@@ -57,4 +57,23 @@
 
         android:text="@string/nextText"/>
 
-    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HINT"
+        android:id="@+id/buttonhint" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Answer"
+        android:id="@+id/cheatButton"
+        android:textAlignment="center"
+        android:textColor="#f40a0a" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3" />
+
+</LinearLayout>
