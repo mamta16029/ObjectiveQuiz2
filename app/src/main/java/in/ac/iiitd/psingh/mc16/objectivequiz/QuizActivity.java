@@ -80,9 +80,9 @@ mtext=(TextView)findViewById(R.id.textViewer);
             @Override
             public void onClick(View view)
             {
-                if(flag==1)
+                
                     n=rando();
-                flag=0;
+                
                 mtext.setText("Is "+n+" a prime number?");
                 txt.setText("");
 
