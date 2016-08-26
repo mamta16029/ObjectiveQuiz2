@@ -22,6 +22,7 @@ public class QuizActivity extends AppCompatActivity implements OnClickListener
     static int flag;
     public static final int REQUEST_CODE_one = 100;
     public static final int REQUEST_CODE_hint = 200;
+    // buttons on the main activity 
     private Button cheatButton;
     private Button mTrueButton;
     private Button mFalseButton;
@@ -33,14 +34,14 @@ static int n;
     private static final String TAG = "QuizActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState)
-    {
+    {  //calling activity hint by the hint button.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
         hintButton = (Button) findViewById(R.id.buttonhint);
         hintButton.setOnClickListener(new OnClickListener()
         {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) {// this is the click function for hint button, that goes to next activity
                 Intent intent=new Intent(getApplicationContext(),hintActivity.class);
                 intent.putExtra("number", n);
 
@@ -56,7 +57,7 @@ static int n;
         cheatButton.setOnClickListener(new OnClickListener()
         {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) {//click function for cheat activity to go from main activity to cheat activity.
                 Intent intent=new Intent(getApplicationContext(),cheatActivity.class);
                  intent.putExtra("number", n);
 
